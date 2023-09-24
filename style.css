@@ -87,11 +87,11 @@ html {
 
 .inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #00c3ff;
+    /* border: 10px solid #00c3ff; */
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 100%;
+    border-radius: 20%;
 }
 
 .inicio .contenido-banner h1 {
