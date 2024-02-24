@@ -313,6 +313,25 @@ html {
     margin-bottom: 0px;
 }
 
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-radius: 5%;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: bold;
+}
+
+.card-text {
+    color: black;
+    font-size: 1rem;
+}
+
 footer {
     background-color: #252A2E;
     color: #fff;
@@ -354,6 +373,7 @@ footer .arriba {
     line-height: 50px;
     font-size: 18px;
 }
+
 
 /* section reponsive */
 @media screen and (max-width:980px) {

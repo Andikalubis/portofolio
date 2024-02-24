@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/favicon.png" rel="icon">
+    <link href="assets/img/pookus-03.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pookus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="contentHeader">
         <header>
             <div class="logo">
-                <a href="#">Portofolio</a>
+                <img src="assets/img/pookus-02.png" style="width: 10px; width: 10%;">
             </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#home" onclick="seleccionar()">Home</a></li>
-                    <li><a href="#about" onclick="seleccionar()">About Me</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Portofolio</a></li>
+                    <li><a href="#about" onclick="seleccionar()">About</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Project</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -105,43 +106,43 @@
                     <h3>Skills</h3>
                     <div class="contentInteres">
                         <div class="interes">
-                            <img src="img/html.png" alt="">
+                            <img src="assets/img/html.png" alt="">
                             <span>HTML</span>
                         </div>
                         <div class="interes">
-                            <img src="img/css.png" alt="">
+                            <img src="assets/img/css.png" alt="">
                             <span>CSS</span>
                         </div>
                         <div class="interes">
-                            <img src="img/php.png" alt="">
+                            <img src="assets/img/php.png" alt="">
                             <span>PHP</span>
                         </div>
                         <div class="interes">
-                            <img src="img/js.png" alt="">
+                            <img src="assets/img/js.png" alt="">
                             <span>JavaScript</span>
                         </div>
                         <div class="interes">
-                            <img src="img/bs.png" alt="">
+                            <img src="assets/img/bs.png" alt="">
                             <span>Bootstrap</span>
                         </div>
                         <div class="interes">
-                            <img src="img/codeigniter.png" alt="">
+                            <img src="assets/img/codeigniter.png" alt="">
                             <span>Codeigniter</span>
                         </div>
                         <div class="interes">
-                            <img src="img/mysql.png" alt="">
+                            <img src="assets/img/mysql.png" alt="">
                             <span>MySQL</span>
                         </div>
                         <div class="interes">
-                            <img src="img/ai.png" alt="">
+                            <img src="assets/img/ai.png" alt="">
                             <span>Adobe Ilustrator</span>
                         </div>
                         <div class="interes">
-                            <img src="img/figma.png" alt="">
+                            <img src="assets/img/figma.png" alt="">
                             <span>Figma</span>
                         </div>
                         <div class="interes">
-                            <img src="img/canva.png" alt="">
+                            <img src="assets/img/canva.png" alt="">
                             <span>Canva</span>
                         </div>
                     </div>
@@ -162,46 +163,13 @@
     <section id="portfolio" class="portfolio">
         <div class="contentWeb">
             <h2>Portofolio Website</h2>
-            <div class="galery">
-                <div class="project">
-                    <img src="img/6.png" alt="">
-                    <div class="overlay">
-                        <h3>Sistem Pakar Anak</h3>
-                        <p>Freelance Web Developer</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="img/7.png" alt="">
-                    <div class="overlay">
-                        <h3>Buku Tamu</h3>
-                        <p>Freelance Web Developer</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="img/10.png" alt="">
-                    <div class="overlay">
-                        <h3>Destinasi Wisata</h3>
-                        <p>Freelance Web Developer</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="img/8.png" alt="">
-                    <div class="overlay">
-                        <h3>Kopi Kuy</h3>
-                        <p>Freelance Web Developer</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="img/9.png" alt="">
-                    <div class="overlay">
-                        <h3>Aditya Motors</h3>
-                        <p>Freelance Web Developer</p>
-                    </div>
-                </div>
+            <div class="row" id="gallery">
+                <!-- Projects will be dynamically added here -->
             </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio">
+
+    <!-- <section id="portfolio" class="portfolio">
         <div class="contentWeb">
             <h2>Portofolio Design</h2>
             <div class="galery">
@@ -242,10 +210,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
     <footer>
+        <div class="col">
+            <h3>Data Personal</h3>
+            <ul>
+                <li>
+                    <strong>Telphone:</strong>
+                    085771887905
+                </li>
+                <li>
+                    <strong>Email:</strong>
+                    anandika217@gmail.com
+                </li>
+                <li>
+                    <strong>Address:</strong>
+                    Cirebon, Jawa Barat
+                </li>
+                <li>
+                    <strong>Work:</strong>
+                    <span>Freelancer</span>
+                </li>
+            </ul>
+        </div>
         <a href="#home" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -256,7 +245,11 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/project.js"></script>
 </body>
 
 </html>
