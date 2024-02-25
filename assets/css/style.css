@@ -14,7 +14,7 @@ html {
 /* MENU */
 .contentHeader {
     background: #ffff;
-    color: #ffff00;
+    color: #FFD700;
     position: fixed;
     width: 100%;
     top: 0;
@@ -62,7 +62,7 @@ html {
 }
 
 .nav-responsive {
-    background-color: #ffff00;
+    background-color: #FFD700;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -72,7 +72,7 @@ html {
 
 /* section profile */
 .profil {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffff00' fill-opacity='1' d='M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,106.7C373.3,107,427,149,480,165.3C533.3,181,587,171,640,186.7C693.3,203,747,245,800,256C853.3,267,907,245,960,240C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,106.7C373.3,107,427,149,480,165.3C533.3,181,587,171,640,186.7C693.3,203,747,245,800,256C853.3,267,907,245,960,240C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z'/%3E%3C/svg%3E");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -118,7 +118,7 @@ html {
 }
 
 .profil .contentBanner button {
-    background-color: #ffff00;
+    background-color: #FFD700;
     border: 1px solid;
     color: #000;
     padding: 10px 20px;
@@ -135,7 +135,7 @@ html {
 }
 
 .myProfile {
-    background-color: #ffff00;
+    background-color: #FFD700;
     /* Warna latar belakang kuning */
     color: #000000;
     /* Warna teks putih */
@@ -221,7 +221,7 @@ html {
 }
 
 .myProfile .personal .col .contentInteres .interes:hover {
-    background-color: #ffff00;
+    background-color: #FFD700;
 }
 
 .myProfile .personal .col .contentInteres .interes i {
@@ -260,7 +260,7 @@ html {
 
 /* SECCION PORTFOLIO */
 .portfolio {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffff00' fill-opacity='1' d='M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,80C840,117,960,203,1080,234.7C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,80C840,117,960,203,1080,234.7C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'/%3E%3C/svg%3E");
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     /* color: #000000; */
     background-size: cover;
@@ -331,9 +331,7 @@ html {
 
 .card {
     border-radius: 15px;
-    /* border: 2px solid #000000; */
     transition: box-shadow 0.3s ease;
-    /* Efek transisi saat hover */
 }
 
 .card:hover {
@@ -358,7 +356,7 @@ html {
 
 /* footer */
 .footer {
-    background-color: #ffff00;
+    background-color: #FFD700;
     color: #000000;
     /* Warna teks putih */
     padding: 20px;
@@ -424,6 +422,14 @@ html {
         display: block;
     }
 
+    .profil {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,106.7C373.3,107,427,149,480,165.3C533.3,181,587,171,640,186.7C693.3,203,747,245,800,256C853.3,267,907,245,960,240C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z'/%3E%3C/svg%3E");
+    }
+
+    .portfolio {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,80C840,117,960,203,1080,234.7C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'/%3E%3C/svg%3E");
+    }
+
     nav.responsive {
         display: block;
         position: absolute;
@@ -444,6 +450,15 @@ html {
 }
 
 @media screen and (max-width:700px) {
+
+    .profil {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,106.7C373.3,107,427,149,480,165.3C533.3,181,587,171,640,186.7C693.3,203,747,245,800,256C853.3,267,907,245,960,240C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z'/%3E%3C/svg%3E");
+    }
+
+    .portfolio {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,80C840,117,960,203,1080,234.7C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'/%3E%3C/svg%3E");
+    }
+
     .myProfile .personal {
         display: block;
     }
@@ -464,36 +479,29 @@ html {
         width: 100%;
     }
 
-    .curriculum .personal {
-        display: block;
+    .card {
+        border-radius: 15px;
+        transition: box-shadow 0.3s ease;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
-    .curriculum .personal .col {
-        width: 90%;
+    .card:hover {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
     }
 
-    .curriculum .personal .derecha {
-        margin-left: 20px;
+    .card-img-top {
+        border-radius: 5%;
     }
 
-    .portfolio .galery {
-        display: block;
-        width: 100%;
+    .card-title {
+        font-size: 1.25rem;
+        color: black;
+        font-weight: bold;
     }
 
-    .portfolio .galery .project {
-        max-width: 100%;
-    }
-
-    .portfolio .galery .project img {
-        width: 100%;
-    }
-
-    .contacto .personal {
-        display: block;
-    }
-
-    .contacto .personal .col {
-        width: 100%;
+    .card-text {
+        color: black;
+        font-size: 1rem;
     }
 }
