@@ -1,7 +1,8 @@
-function redirectToWhatsApp() {
-    var phoneNumber = "+628771887905";
-    var message = "Halo, saya tertarik dengan layanan Anda.";
-    var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector("#whatsappButton");
+    var message = encodeURIComponent("Halo, saya tertarik dengan layanan Anda.");
 
-    window.location.href = url;
-}
+    button.addEventListener("click", function () {
+        window.location.href = "https://wa.me/message/CAEUR4YUGOTIO1?text=" + message;
+    });
+});
