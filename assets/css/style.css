@@ -8,18 +8,22 @@
 }
 
 html {
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
 
 /* MENU */
 .contentHeader {
-    background: #1e2326;
+    background: #ffff;
+    /* Warna latar belakang kuning */
+    color: #ffff00;
+    /* Warna teks putih */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    animation: fadeIn 1s ease-in;
+    /* Animasi fade-in */
 }
 
 .contentHeader header {
@@ -34,7 +38,8 @@ html {
 .contentHeader header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
-    color: #00c3ff;
+    color: #000000;
+    /* Warna logo hitam */
     text-decoration: none;
 }
 
@@ -45,7 +50,8 @@ html {
 
 .contentHeader header nav ul li a {
     text-align: none;
-    color: #fff;
+    color: #000000;
+    /* Warna teks putih */
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -53,7 +59,8 @@ html {
 }
 
 .contentHeader header nav ul li a:hover {
-    color: #00c3ff;
+    color: #000000;
+    /* Warna teks hitam */
 }
 
 .nav-responsive {
@@ -67,19 +74,18 @@ html {
 
 /* section profile */
 .profil {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-        url(img/fondo.jpg);
+    background: #ffffff;
+    color: #000000;
     background-size: cover;
     height: 100vh;
-    color: #fff;
     display: flex;
     align-items: center;
+    animation: fadeIn 1s ease-in;
 }
 
 .profil .contentBanner {
     padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
+    background-color: #ffffff;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -87,7 +93,6 @@ html {
 
 .profil .contentBanner img {
     margin-top: 40px;
-    /* border: 10px solid #00c3ff; */
     display: block;
     width: 80%;
     margin: auto;
@@ -95,7 +100,7 @@ html {
 }
 
 .profil .contentBanner h1 {
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 42px;
     font-family: 'Righteous';
 }
@@ -105,28 +110,39 @@ html {
     font-weight: normal;
 }
 
-.profil .contentBanner .foot a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
+.profil .contentBanner .redes {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.profil .contentBanner .foot a:hover {
-    background-color: #00c3ff;
+.profil .contentBanner .redes a {
+    color: #000;
+    margin: 0 10px;
+}
+
+.profil .contentBanner button {
+    background-color: #ffff00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profil .contentBanner button:hover {
+    background-color: #fff;
+    border: 1px solid;
 }
 
 .myProfile {
-    background-color: #1e2326;
-    color: #fff;
+    background-color: #ffff00;
+    /* Warna latar belakang kuning */
+    color: #000000;
+    /* Warna teks putih */
     padding: 50px 20px;
+    animation: fadeIn 1s ease-in;
 }
 
 .myProfile .contentSection {
@@ -139,7 +155,6 @@ html {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 
 .myProfile .contentSection p {
@@ -197,7 +212,7 @@ html {
 .myProfile .personal .col .contentInteres .interes {
     width: 100px;
     height: 100px;
-    background-color: #252A2E;
+    background-color: #ffffff;
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -208,7 +223,7 @@ html {
 }
 
 .myProfile .personal .col .contentInteres .interes:hover {
-    background-color: #00c3ff;
+    background-color: #ffff00;
 }
 
 .myProfile .personal .col .contentInteres .interes i {
@@ -219,13 +234,13 @@ html {
 .myProfile button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #000000;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     position: relative;
     z-index: 10;
 }
@@ -245,12 +260,13 @@ html {
     width: 100%;
 }
 
-/* section portofolio */
+/* SECCION PORTFOLIO */
 .portfolio {
-    background-image: url(img/contact_bg.png);
-    background-color: #252A2E;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
+
     padding: 50px 20px;
+    animation: fadeIn 1s ease-in;
 }
 
 .portfolio .contentWeb {
@@ -315,6 +331,14 @@ html {
 
 .card {
     border-radius: 15px;
+    /* border: 2px solid #000000; */
+    transition: box-shadow 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    /* Shadow effect saat hover */
 }
 
 .card-img-top {
@@ -332,50 +356,65 @@ html {
     font-size: 1rem;
 }
 
-footer {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 0 30px 0;
+/* footer */
+.footer {
+    background-color: #ffff00;
+    color: #000000;
+    /* Warna teks putih */
+    padding: 20px;
     text-align: center;
-    position: relative;
-    width: 100%;
+    animation: fadeIn 1s ease-in;
+    /* Animasi fade-in */
 }
 
-footer .foot {
-    margin-bottom: 20px;
+.footer .col {
+    text-align: left;
 }
 
-footer .foot a {
-    color: #fff;
-    display: inline-block;
+.footer .col h3 {
+    color: #000000;
+    /* Warna teks putih */
+}
+
+.footer .col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .col ul li {
+    margin-bottom: 10px;
+}
+
+.footer .col ul li strong {
+    color: #000000;
+    /* Warna teks putih */
+}
+
+.footer .arriba {
+    color: #000000;
+    /* Warna teks putih */
     text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
 }
 
-footer .arriba {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #00c3ff;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
+.footer .foot a {
+    color: #000000;
+    /* Warna teks putih */
+    text-decoration: none;
+    margin: 0 5px;
 }
 
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-/* section reponsive */
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
 @media screen and (max-width:980px) {
     nav {
         display: none;
