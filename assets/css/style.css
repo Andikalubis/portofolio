@@ -21,11 +21,12 @@ html {
     left: 0;
     z-index: 99;
     transition: box-shadow 0.3s ease;
+    /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); */
 }
 
-.contentHeader.header-scrolled {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+/* CSS */
+.contentHeader.shadow-active {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .contentHeader header {
@@ -257,6 +258,8 @@ html {
 
 .myProfile .personal .col .contentInteres .interes:hover {
     background-color: #FFD700;
+    border: 1px solid;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .myProfile .personal .col .contentInteres .interes i {

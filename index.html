@@ -69,7 +69,7 @@
 
             <div class="personal">
                 <div class="col">
-                    <h3 style="color: black;">Skills</h3>
+                    <h3 style="color: black;">Tech Stack</h3>
                     <div class="contentInteres">
                         <div class="interes">
                             <img src="assets/img/html.png" alt="">
@@ -144,6 +144,17 @@
             <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
         </div>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.contentHeader');
+            if (window.scrollY > 0) {
+                header.classList.add('shadow-active');
+            } else {
+                header.classList.remove('shadow-active');
+            }
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
