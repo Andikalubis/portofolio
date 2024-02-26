@@ -27,8 +27,19 @@
                     <li><a href="#portfolio" onclick="seleccionar()">Project</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fas fa-bars"></i> <!-- Mengubah kelas ikon menjadi "fas" sesuai dengan Font Awesome 6 -->
+            <div class="nav-responsive" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Container untuk sidebar -->
+            <div class="sidebar-container close-icon" id="sidebar">
+                <div class="sidebar-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Project</a>
+                    <!-- <a href="#">Services</a>
+                    <a href="#">Contact</a> -->
+                </div>
             </div>
         </header>
     </div>
@@ -154,6 +165,24 @@
                 header.classList.remove('shadow-active');
             }
         });
+
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("sidebar-active");
+
+            var menuBtn = document.querySelector(".nav-responsive");
+            menuBtn.classList.toggle("menu-btn-active");
+        }
+
+        // Menambahkan event listener untuk setiap elemen menu
+        var menuItems = document.querySelectorAll(".sidebar-content a");
+        menuItems.forEach(function (item) {
+            item.addEventListener("click", function () {
+                toggleSidebar(); // Memanggil fungsi toggleSidebar() ketika menu dipilih
+            });
+        });
+
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

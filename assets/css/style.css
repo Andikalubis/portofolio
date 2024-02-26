@@ -78,6 +78,40 @@ html {
     /* Warna animasi ketika hover */
 }
 
+/* Container untuk sidebar */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #FFD700;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease, opacity 0.3s ease;
+    opacity: -5;
+}
+
+/* Isi sidebar */
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-content a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar-active {
+    right: 0;
+    opacity: 1;
+}
+
+.menu-btn-active .nav-responsive {
+    transform: translateX(250px);
+}
+
 .nav-responsive {
     background-color: #FFD700;
     color: #fff;
