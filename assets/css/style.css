@@ -251,13 +251,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: transform 0.3s;
     perspective: 1000px;
 }
 
 .myProfile .personal .col .contentInteres .interes:hover {
     transform: rotateY(20deg);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .myProfile .personal .col .contentInteres .interes img {
@@ -279,6 +278,7 @@ html {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 
 .myProfile button {
     cursor: pointer;
@@ -354,27 +354,21 @@ html {
 .card {
     border-radius: 15px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    /* Menambahkan transition untuk transform */
     perspective: 1000px;
-    /* Jarak pandang untuk efek 3D */
 }
 
 .card:hover {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-    /* Shadow effect saat hover */
     transform: rotateY(10deg);
-    /* Rotasi kartu pada sumbu Y saat hover */
 }
 
 .card-img-top {
     border-radius: 5%;
     transition: transform 0.3s ease;
-    /* Transisi untuk gambar */
 }
 
 .card:hover .card-img-top {
     transform: scale(1.1);
-    /* Memperbesar gambar saat hover */
 }
 
 .card-title {
@@ -392,11 +386,9 @@ html {
 .footer {
     background-color: #FFD700;
     color: #000000;
-    /* Warna teks putih */
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in;
-    /* Animasi fade-in */
 }
 
 .footer .col {
@@ -452,6 +444,10 @@ html {
         display: none;
     }
 
+    .myProfile .personal .col .contentInteres .interes {
+        width: calc(33.33% - 15px);
+    }
+
     .nav-responsive {
         display: block;
     }
@@ -484,6 +480,9 @@ html {
 }
 
 @media screen and (max-width:700px) {
+    .myProfile .personal .col .contentInteres .interes {
+        width: calc(33.33% - 15px);
+    }
 
     .profil {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,106.7C373.3,107,427,149,480,165.3C533.3,181,587,171,640,186.7C693.3,203,747,245,800,256C853.3,267,907,245,960,240C1013.3,235,1067,245,1120,250.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z'/%3E%3C/svg%3E");
@@ -516,64 +515,23 @@ html {
     .card {
         border-radius: 15px;
         transition: box-shadow 0.3s ease, transform 0.3s ease;
-        /* Menambahkan transition untuk transform */
         perspective: 1000px;
-        /* Jarak pandang untuk efek 3D */
+        margin: auto;
+        /* Menengahkan kartu */
     }
 
     .card:hover {
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-        /* Shadow effect saat hover */
         transform: rotateY(10deg);
-        /* Rotasi kartu pada sumbu Y saat hover */
     }
 
     .card-img-top {
         border-radius: 5%;
         transition: transform 0.3s ease;
-        /* Transisi untuk gambar */
     }
 
     .card:hover .card-img-top {
         transform: scale(1.1);
-        /* Memperbesar gambar saat hover */
-    }
-
-    .card-title {
-        font-size: 1.25rem;
-        color: black;
-        font-weight: bold;
-    }
-
-    .card-text {
-        color: black;
-        font-size: 1rem;
-    }
-
-    .card {
-        border-radius: 15px;
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-        /* Menambahkan transition untuk transform */
-        perspective: 1000px;
-        /* Jarak pandang untuk efek 3D */
-    }
-
-    .card:hover {
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-        /* Shadow effect saat hover */
-        transform: rotateY(10deg);
-        /* Rotasi kartu pada sumbu Y saat hover */
-    }
-
-    .card-img-top {
-        border-radius: 5%;
-        transition: transform 0.3s ease;
-        /* Transisi untuk gambar */
-    }
-
-    .card:hover .card-img-top {
-        transform: scale(1.1);
-        /* Memperbesar gambar saat hover */
     }
 
     .card-title {
