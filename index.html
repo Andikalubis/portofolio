@@ -25,6 +25,7 @@
                     <li><a href="#home" onclick="seleccionar()">Home</a></li>
                     <li><a href="#about" onclick="seleccionar()">About</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">Project</a></li>
+                    <li><a href="#service" onclick="seleccionar()">Service</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="toggleSidebar()">
@@ -37,8 +38,8 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#portfolio">Project</a>
-                    <!-- <a href="#">Services</a>
-                    <a href="#">Contact</a> -->
+                    <a href="#service">Services</a>
+                    <!-- <a href="#">Contact</a> -->
                 </div>
             </div>
         </header>
@@ -53,11 +54,8 @@
             <h2 style="font-size: 20px;">Web Developer || Design Grapich || UI/UX</h2><br>
             <div class="redes">
                 <a href="https://github.com/Andikalubis"><i class="fab fa-github"></i></a>
-                <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
                 <a href="https://www.linkedin.com/in/anandika/"><i class="fab fa-linkedin-in"></i></a>
-                <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
                 <a href="https://www.instagram.com/pookus.creative/"><i class="fab fa-instagram"></i></a>
-                <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
             </div>
             <button id="whatsappButton" style="font-size: 20px;">Kirim Pesan WhatsApp</button>
         </div>
@@ -82,50 +80,7 @@
                 <div class="col">
                     <h3 style="color: black;">Tech Stack</h3>
                     <div class="contentInteres">
-                        <div class="interes">
-                            <img src="assets/img/html.png" alt="">
-                            <span>HTML</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/css.png" alt="">
-                            <span>CSS</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/php.png" alt="">
-                            <span>PHP</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/js.png" alt="">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/bs.png" alt="">
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/codeigniter.png" alt="">
-                            <span>Codeigniter</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/mysql.png" alt="">
-                            <span>MySQL</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/ai.png" alt="">
-                            <span style="text-align: center;">Adobe Ilustrator</span>
-                        </div>
-                        <div class="interes">
-                            <img src="assets/img/figma.png" alt="">
-                            <span>Figma</span>
-                        </div>
-                        <!-- <a href="https://drive.google.com/drive/folders/13RtRfqjufGOLsI8ff_83AfVd3iAr8QP5?usp=sharing"
-                            target="_blank">
-                            <button>
-                                My Resume <i class="fa-solid fa-download"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a> -->
-
+                        <!-- Tempat untuk menampilkan data -->
                     </div>
                 </div>
             </div>
@@ -141,6 +96,16 @@
         </div>
     </section>
 
+    <!-- SECTION SERVICE -->
+    <section id="service">
+        <!-- <h1 style="text-align: center;">Service</h1> -->
+        <div class="construction-container">
+            <h2>Under Construction</h2>
+            <p>We are currently working on this section. Please check back later for updates.</p>
+        </div>
+    </section>
+
+
     <!-- footer -->
     <footer class="footer">
         <a href="#home" class="arriba">
@@ -152,7 +117,6 @@
             <a href="https://www.linkedin.com/in/anandika/"><i class="fab fa-linkedin-in"></i></a>
             <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
             <a href="https://www.instagram.com/andkl._/"><i class="fab fa-instagram"></i></a>
-            <!-- Mengubah kelas ikon sesuai dengan Font Awesome 6 -->
         </div>
     </footer>
 
@@ -174,11 +138,10 @@
             menuBtn.classList.toggle("menu-btn-active");
         }
 
-        // Menambahkan event listener untuk setiap elemen menu
         var menuItems = document.querySelectorAll(".sidebar-content a");
         menuItems.forEach(function (item) {
             item.addEventListener("click", function () {
-                toggleSidebar(); // Memanggil fungsi toggleSidebar() ketika menu dipilih
+                toggleSidebar();
             });
         });
 
@@ -190,6 +153,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/project.js"></script>
+    <script src="assets/js/stack.js"></script>
     <script src="assets/js/wa.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-// Data proyek
+
 const projects = [
     {
         title: "Sistem Pakar Anak",

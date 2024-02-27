@@ -75,7 +75,6 @@ html {
 .contentHeader header nav ul li a:hover::before {
     transform: scaleX(1);
     background-color: #FFD700;
-    /* Warna animasi ketika hover */
 }
 
 /* Container untuk sidebar */
@@ -133,7 +132,6 @@ html {
 
 .profil .contentBanner {
     padding: 20px;
-    /* background-color: #ffffff; */
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -289,6 +287,14 @@ html {
     perspective: 1000px;
 }
 
+.interes {
+    text-align: center;
+}
+
+.interes span {
+    margin-top: 5px;
+}
+
 .myProfile .personal .col .contentInteres .interes:hover {
     transform: rotateY(20deg);
 }
@@ -304,7 +310,6 @@ html {
 
 .myProfile .personal .col .contentInteres .interes:hover {
     background-color: #FFD700;
-    /* border: 1px solid; */
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -347,11 +352,9 @@ html {
 .portfolio {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFD700' fill-opacity='1' d='M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,80C840,117,960,203,1080,234.7C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'/%3E%3C/svg%3E");
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    /* color: #000000; */
     background-size: cover;
     padding: 50px 20px;
     animation: fadeIn 1s ease-in;
-    /* Efek bayangan */
 }
 
 .portfolio .contentWeb {
@@ -414,6 +417,32 @@ html {
 .card-text {
     color: black;
     font-size: 1rem;
+}
+
+#service {
+    perspective: 1000px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.construction-container {
+    transform-style: preserve-3d;
+    animation: rotateY 15s infinite linear;
+    text-align: center;
+}
+
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 /* footer */
