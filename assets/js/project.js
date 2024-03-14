@@ -3,27 +3,27 @@ const projects = [
     {
         title: "Sistem Pakar Anak",
         image: "assets/img/6.png",
-        description: "Freelance Web Developer"
+        description: "Web Developer"
     },
     {
         title: "Buku Tamu",
         image: "assets/img/7.png",
-        description: "Freelance Web Developer"
+        description: "Web Developer"
     },
     {
         title: "Destinasi Wisata",
         image: "assets/img/10.png",
-        description: "Freelance Web Developer"
+        description: "Web Developer"
     },
     {
         title: "Kopi Kuy",
         image: "assets/img/8.png",
-        description: "Freelance Web Developer"
+        description: "Web Developer"
     },
     {
         title: "Aditya Motors",
         image: "assets/img/9.png",
-        description: "Freelance Web Developer"
+        description: "Web Developer"
     }
 ];
 
